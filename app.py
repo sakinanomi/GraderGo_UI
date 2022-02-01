@@ -133,6 +133,11 @@ def save():
         essay=request.form.get('essay')
         score=essay
         essay_name=request.form.get('essay_name')
+        print(essay_name)
+        if (essay_name == ""):
+            # print("heeeeloo")
+
+            essay_name = 'essay'
         ess = essays(essay_name=essay_name, email=session['email'], Score=score)
         db.session.add(ess)
         db.session.commit()
