@@ -1,4 +1,4 @@
-# tsui
+# GraderGo_UI
 
 - This is the main UI page of GraderGo project
 - Made using Flask
